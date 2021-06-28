@@ -27,12 +27,11 @@ jobs:
           conda-channels: anaconda, conda-forge
       - run: conda --version
       - run: which python
-        #- run: which python
-        #- name: Run installation.
-        #run: |
-        # bash -e install.sh
-        #- name: Test module imports
-        #run: |
-        # python <<< "import alpenglow"
-        # python <<< "import twittercrawler" 
-        # python <<< "import online_node2vec" 
+      - name: Run installation.
+        run: |
+         bash -e install.sh
+      - name: Test module imports
+        run: |
+         python <<< "import alpenglow"
+         python <<< "import twittercrawler" 
+         python <<< "import online_node2vec" 
