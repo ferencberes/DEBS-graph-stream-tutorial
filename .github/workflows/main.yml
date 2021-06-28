@@ -19,20 +19,20 @@ jobs:
           #python-version: ['3.6', '3.7', '3.8','3.9']
       steps:
       - uses: actions/checkout@v2
-      - uses: conda-incubator/setup-miniconda@v2
+      - name: Setup conda
+        uses: s-weigand/setup-conda@v1
         with:
-          activate-environment: test
+          update-conda: true
           python-version: ${{ matrix.python-version }}
-          auto-activate-base: false
-          # uses: actions/setup-python@v1
-          #with:
-          #python-version: ${{ matrix.python-version }}
+          conda-channels: anaconda, conda-forge
+      - run: conda --version
       - run: which python
-      - name: Run installation.
-        run: |
-         bash -e install.sh
-      - name: Test module imports
-        run: |
-         python <<< "import alpenglow"
-         python <<< "import twittercrawler" 
-         python <<< "import online_node2vec" 
+        #- run: which python
+        #- name: Run installation.
+        #run: |
+        # bash -e install.sh
+        #- name: Test module imports
+        #run: |
+        # python <<< "import alpenglow"
+        # python <<< "import twittercrawler" 
+        # python <<< "import online_node2vec" 

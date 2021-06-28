@@ -8,7 +8,8 @@ In this short tutorial, we cover recent methods to analyze and model network dat
 
 # Requirements
 
-Run the following script to install dependencies in a UNIX environment.
+1. Setup a **conda environment**
+2. Run the following script to install dependencies:
 
 ```
 ./install.sh
