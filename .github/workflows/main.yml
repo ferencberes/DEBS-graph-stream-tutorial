@@ -37,5 +37,8 @@ jobs:
          python <<< "import online_node2vec"
       - name: Node embedding notebook
         run: |
-         jupyter nbconvert --to notebook --execute  --ExecutePreprocessor.timeout=3600 node_embedding/OnlineNodeEmbeddings.ipynb
+         jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=3600 node_embedding/OnlineNodeEmbeddings.ipynb
+      - name: Link prediction notebook
+        run: |
+         jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=3600 link_prediction/alpenglow.ipynb
 
