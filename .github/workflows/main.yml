@@ -29,8 +29,13 @@ jobs:
       - name: Run installation.
         run: |
          bash -e install.sh
+         pip install jupyter
       - name: Test module imports
         run: |
          python <<< "import alpenglow"
          python <<< "import twittercrawler" 
-         python <<< "import online_node2vec" 
+         python <<< "import online_node2vec"
+      - name: Node embedding notebook
+        run: |
+         jupyter nbconvert --to notebook --execute  --ExecutePreprocessor.timeout=3600 node_embedding/OnlineNodeEmbeddings.ipynb
+

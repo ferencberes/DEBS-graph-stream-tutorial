@@ -19,12 +19,14 @@ conda create -n "debs" python=3.7
 2. Activate your environment and install dependencies:
 
 ```
-conda install debs
+conda activate debs
 ./install.sh
 ```
 
-# Code material
+# Code materials
 
-- Twitter graph stream generator: [readme](graph_stream/)
-- Link prediction by online ML - the [Alpenglow](https://github.com/rpalovics/Alpenglow) toolkit: [HTML](http://info.ilab.sztaki.hu/~fberes/debs_tutorial/alpenglow.html), [source](link_prediction/alpenglow.ipynb)
-- Online graph embedding algorithms: [coding slides](http://info.ilab.sztaki.hu/~fberes/debs_tutorial/OnlineNodeEmbeddings.slides.html), [source](node_embedding/OnlineNodeEmbeddings.ipynb)
+1. Twitter graph stream generator: [readme](graph_stream/)
+2. Online graph embedding algorithms: [coding slides](http://info.ilab.sztaki.hu/~fberes/debs_tutorial/OnlineNodeEmbeddings.slides.html), [source](node_embedding/OnlineNodeEmbeddings.ipynb)
+3. Link prediction by online ML - the [Alpenglow](https://github.com/rpalovics/Alpenglow) toolkit: [HTML](http://info.ilab.sztaki.hu/~fberes/debs_tutorial/alpenglow.html), [source](link_prediction/alpenglow.ipynb)
+
+**NOTE:** Always execute the two notebooks in the specified order. The node embedding notebook contains necessary data preprocessing steps (RG17 Tennis data download, mention stream export) for the link prediction notebook. 
