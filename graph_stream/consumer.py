@@ -13,7 +13,7 @@ def listen_for_news(port, hide_accounts=True):
                     target = mention_obj["id_str"] if hide_accounts else mention_obj["screen_name"]
                     record = {
                         "time":ts,
-                        "tweet_id":tweet_id,
+                        #"tweet_id":tweet_id,
                         "source":source,
                         "target":target
                     }
