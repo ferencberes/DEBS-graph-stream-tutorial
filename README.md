@@ -18,5 +18,5 @@ Run the following script to install dependencies in a UNIX environment.
 # Content
 
 - Twitter graph stream generator: [readme](graph_stream/)
-- Link prediction by online ML - the [Alpenglow](https://github.com/rpalovics/Alpenglow) toolkit: [HTML](link_prediction/alpenglow.html), [source](link_prediction/alpenglow.ipynb)
-- Online graph embedding algorithms: [coding slides](node_embedding/OnlineNodeEmbeddings.slides.html), [source](node_embedding/OnlineNodeEmbeddings.ipynb)
+- Link prediction by online ML - the [Alpenglow](https://github.com/rpalovics/Alpenglow) toolkit: [HTML](http://info.ilab.sztaki.hu/~fberes/debs_tutorial/alpenglow.html), [source](link_prediction/alpenglow.ipynb)
+- Online graph embedding algorithms: [coding slides](http://info.ilab.sztaki.hu/~fberes/debs_tutorial/OnlineNodeEmbeddings.slides.html), [source](node_embedding/OnlineNodeEmbeddings.ipynb)
