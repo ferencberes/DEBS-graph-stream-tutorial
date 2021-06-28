@@ -1,0 +1,33 @@
+name: CI
+
+on:
+
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+    build:
+      runs-on: ${{ matrix.os }}
+      strategy:
+        matrix:
+          os: [ubuntu-18.04, ubuntu-latest]
+          #python-version: ['3.6', '3.7', '3.8','3.9']
+          python-version: ['3.6']
+      steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: which python
+      - name: Run installation.
+        run: |
+         ./install.sh
+      - name: Test module imports
+        run: |
+         python <<< "import alpenglow"
+         python <<< "import twittercrawler" 
+         python <<< "import online_node2vec" 

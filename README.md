@@ -1,5 +1,4 @@
 # DEBS-graph-stream-tutorial
-Tutorial on graph stream analytics
 
 In this repository, the authors (A Benczúr, F Béres, DM Kelen, R Pálovics) publish Python code material related to the Graph stream analytics tutorial (DEBS 2021 conference).
 
@@ -15,7 +14,7 @@ Run the following script to install dependencies in a UNIX environment.
 ./install.sh
 ```
 
-# Content
+# Code material
 
 - Twitter graph stream generator: [readme](graph_stream/)
 - Link prediction by online ML - the [Alpenglow](https://github.com/rpalovics/Alpenglow) toolkit: [HTML](http://info.ilab.sztaki.hu/~fberes/debs_tutorial/alpenglow.html), [source](link_prediction/alpenglow.ipynb)
