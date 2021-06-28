@@ -1,5 +1,7 @@
 # DEBS-graph-stream-tutorial
 
+![build](https://github.com/ferencberes/DEBS-graph-stream-tutorial/actions/workflows/main.yml/badge.svg)
+
 In this repository, the authors (A Benczúr, F Béres, DM Kelen, R Pálovics) publish Python code material related to the Graph stream analytics tutorial (DEBS 2021 conference).
 
 # Abstract
@@ -8,10 +10,16 @@ In this short tutorial, we cover recent methods to analyze and model network dat
 
 # Requirements
 
-1. Setup a **conda environment**
-2. Run the following script to install dependencies:
+1. Create a **Python 3.7 conda environment**
 
 ```
+conda create -n "debs" python=3.7
+```
+
+2. Activate your environment and install dependencies:
+
+```
+conda install debs
 ./install.sh
 ```
 
